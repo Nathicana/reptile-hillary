@@ -1,0 +1,71 @@
+<html>
+<body>
+	<div id="inputs">
+		<label>Name</label>
+
+		<input id="whoareyou" type="text"><p>
+
+		<label>Blog</label>
+		<input id="blog" type="text"><p>
+
+		<button id="submit">Submit</button> 
+	</div>
+
+	<div id="blogspot">YOUR BLOG WILL DISPLAY HERE</div>
+
+	<script lang="javascript" src="Scripts/jquery-3.1.0.slim.js"></script>
+
+	<script>
+
+		// jQuery will listen to the button's click action. and inside that, perform something 
+		$("#submit").click(function(){ 
+
+			// this syntax is assigning the value of "whoareyou" ID textbox into the "whoAreYou" variable
+			var whoAreYouValue = $("#whoareyou").val();
+
+			// this syntax is assigning the value of "blog" ID textbox into the "blogValue" variable
+			var blogValue = $("#blog").val();
+
+			// this is "concatenating" whoareyou and blog values in the blogspotValue variable
+			var blogspotValue = whoAreYouValue + " " + blogValue;
+
+
+			// this is the blog posted in the blogspot div box
+			$("#blogspot").append("<p>" + blogspotValue); 
+
+			// this will "clear" the values of our whoareyou and blog textbox (technically replacing them with empty values)
+			$("#blog").val("");
+			$("#whoareyou").val("");
+
+		
+			// this will set our cursor focus to the "whoareyou" input
+			$("#whoareyou").focus();
+
+			// this can also be done by just doing this
+			// $("#blogspot").append("<p>" + $("#whoareyou").val() + " " + $("#blog").val());
+
+		});
+	</script>
+
+	<style>
+		#inputs {
+			border: 3px yellow dotted;
+			width: 200px;
+			display: inline-block;
+			background: pink;
+		}
+
+		#blog {
+			border: 1px red dotted;
+		}
+
+		#blogspot{
+			border: 1px solid black;
+			width: 500px;
+			float: right;
+			display: inline-block;
+		}
+	</style>
+
+</body>
+</html>

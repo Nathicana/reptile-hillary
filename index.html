@@ -13,18 +13,27 @@
 
 <body>
 	<div id="inputs">
-		<label>Name</label>
 
-		<input id="whoareyou" type="text"><p>
+		<div class="group">
+			<label class="rounded border">Name</label>
 
-		<label>Blog</label>
-		<input id="blog" type="text"><p>
+			<input class="border textbox" id="whoareyou" type="text">
+		</div>
+		
+		<div class="group">
+			<label class="rounded border">Blog</label>
+			<textarea rows="5" cols="50" class="border" id="blog"></textarea>
+		</div>
+	
+		<div class="group">
+			<button class="rounded border" id="submit">Submit</button> 
+		</div>
 
-		<button id="submit">Submit</button> 
 	</div>
 
-	<div id="blogspot">YOUR BLOG WILL DISPLAY HERE</div>
-
+	<div id="blogbox">
+		<div class="rounded border" id="blogspot">YOUR BLOG WILL DISPLAY HERE</div>
+	</div>
 	
 
 	

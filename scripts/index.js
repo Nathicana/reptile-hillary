@@ -10,7 +10,7 @@ $(document).ready(function(){
 			var blogValue = $("#blog").val();
 
 			// this is "concatenating" whoareyou and blog values in the blogspotValue variable
-			var blogspotValue = ("<p>" + whoAreYouValue + "<br>" + moment().format('MMMM Do YYYY, h:mm:ss a') + "<p>" + blogValue);
+			var blogspotValue =  "<div class='border rounded'>" +  whoAreYouValue + "<br>" + moment().format('MMMM Do YYYY, h:mm:ss a') + "<p>" + blogValue + "</div>";
 
 	
 			// this is the blog posted in the blogspot div box

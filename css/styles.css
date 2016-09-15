@@ -1,19 +1,41 @@
 
 		#inputs {
-			border: 3px yellow dotted;
-			width: 200px;
-			display: inline-block;
-			background: pink;
-		}
-
-		#blog {
-			border: 1px red dotted;
+			width: 400px;
+			float: left;
 		}
 
 		#blogspot{
-			border: 1px solid black;
 			width: 500px;
 			float: right;
-			display: inline-block;
+			height: 200px;
+		}
+		#blog, #whoareyou{
+			margin-left: 20px;
+		}
+		#submit{
+			float: right;
 		}
 	
+		
+		.rounded{
+			border-radius: 8px;
+		}
+
+		.border{
+			border: solid black 4px;
+			padding: 3px;
+			font-size: 12px;
+
+		}
+	
+		.textbox{
+			padding: 15px;
+		}
+
+		.group {
+			height: 100px;
+		}
+
+		.group > * {
+			float: left;
+		}

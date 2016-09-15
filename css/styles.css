@@ -1,0 +1,19 @@
+
+		#inputs {
+			border: 3px yellow dotted;
+			width: 200px;
+			display: inline-block;
+			background: pink;
+		}
+
+		#blog {
+			border: 1px red dotted;
+		}
+
+		#blogspot{
+			border: 1px solid black;
+			width: 500px;
+			float: right;
+			display: inline-block;
+		}
+	

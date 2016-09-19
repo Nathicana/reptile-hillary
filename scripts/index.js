@@ -10,11 +10,11 @@ $(document).ready(function(){
 			var blogValue = $("#blog").val();
 
 			// this is "concatenating" whoareyou and blog values in the blogspotValue variable
-			var blogspotValue =  "<div class='border rounded'>" +  whoAreYouValue + "<br>" + moment().format('MMMM Do YYYY, h:mm:ss a') + "<p>" + blogValue + "</div>";
+			var blogspotValue =  "<div class='border rounded luminosity blog'>" +  whoAreYouValue + "<br>" + moment().format('MMMM Do YYYY, h:mm:ss a') + "<p>" + blogValue + "</div>";
 
 	
 			// this is the blog posted in the blogspot div box
-			$("#blogspot").append(blogspotValue);
+			$("#blogbox").append(blogspotValue);
 
 			// this will "clear" the values of our whoareyou and blog textbox (technically replacing them with empty values)
 			$("#blog").val("");

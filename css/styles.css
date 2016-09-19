@@ -4,18 +4,24 @@
 			float: left;
 		}
 
-		#blogspot{
+		#title{
 			width: 500px;
-			float: right;
-			height: 200px;
 		}
+
+		#blogbox {
+			float: right;
+			background-color: magenta;
+			padding: 6px;
+		}
+
+
 		#blog, #whoareyou{
 			margin-left: 20px;
 		}
+
 		#submit{
 			float: right;
-		}
-	
+		}	
 		
 		.rounded{
 			border-radius: 8px;
@@ -25,7 +31,18 @@
 			border: solid black 4px;
 			padding: 3px;
 			font-size: 12px;
+		}
+		
+		.luminosity{
+			background-color: yellow;
+		}
 
+		.lavender{
+			background-color: pink;
+		}
+
+		.orange{
+			background-color: orange;
 		}
 	
 		.textbox{
@@ -38,4 +55,15 @@
 
 		.group > * {
 			float: left;
+		}
+
+		.blog{
+			position: relative;
+			display: block;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+
+		.fullpage{
+			background-color: aqua ;
 		}

@@ -60,10 +60,9 @@
 			margin-top: 5px;
 		}
 
-		.fullpage{
-			background-color: olive ;
-		}
 
-		.img { 
-    		width:100%; 
+		html {
+			background-image: url("http://cdn.now.howstuffworks.com/media-content/K2wzrPQ8-oldtree_catharinemacbride_gettyimagejpg-1920-1080.jpg");
+			background-size: cover;
+
 		}
